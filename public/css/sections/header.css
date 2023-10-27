@@ -1,0 +1,71 @@
+.header__nav {
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo {
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.header__menu-search input {
+    font-weight: normal;
+}
+
+
+.header__menu-search input {
+    border-radius: 10px;
+    width: 1200px;
+    height: 50px;
+    padding-left: 40px;
+    border: 1px solid gray;
+    
+}
+
+
+.header__menu-btn {
+    border: 1px solid rgb(22, 157, 151);
+    width: 90px;
+    height: 36px;
+    border-radius: 4px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+.header__menu {
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+
+    list-style: none;
+}
+
+
+/* Phones */
+
+@media only screen and (max-width : 480px) {
+
+    /* on the left we place hamburger */
+
+    .header__nav {
+        overflow: hidden;
+
+    }
+    .header__logo {
+        justify-content: center;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+
+
+
+}

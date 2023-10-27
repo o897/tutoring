@@ -1,0 +1,278 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero image slideshow , Slide animation */
+
+.hero__images-frame {
+    overflow: hidden;
+    width: 1340px;
+    margin-top: 20px;
+}
+
+@-webkit-keyframes slide_animation {
+    0% {left:0;}
+    10% {left:0;}
+    20% {left:1340px;}
+    30% {left:1340px;}
+    40% {left:2680px;}
+    50% {left:2680px;}
+    60% {left:1340px;}
+    70% {left:1340px;}
+    80% {left:0px;}
+    90% {left:0px;}
+    100% {left:0px;}
+}
+
+.hero__images-slide {
+    width: 4020px;
+    /* height: 800px; */
+    margin: 0 0 0 -2680px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 33s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+
+.img-container {
+    width: 1340px;
+    position: relative;
+    float: left;
+}
+
+/* End */
+
+
+/* hero__video-card , Below My Learning*/
+
+.hero__user {
+    font-weight: 700;
+}
+
+.play-icon {
+    position: absolute;
+    width: 70px;
+    height: 35px;
+}
+.hero__video-cards {
+
+    display: flex;
+    gap: 15px;
+    overflow-y: auto;
+}
+
+/* Hide scrollbar */
+.hero__video-cards::-webkit-scrollbar {
+    width: 0.4em;
+  }
+
+.hero__video-cards::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+.hero__video-card {
+
+    width: 422px;
+    height: 150px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+
+.hero__vide-card-play {
+
+    margin-right: 5px;
+
+}
+
+.hero__video-card-info-title {
+    color: #6a6f73;
+}
+.hero__video-card-info-description {
+    line-height: 18px;
+    font-weight: 700;
+    inline-size: 280px;
+
+}
+
+
+.hero__vide-card-play img {
+    width: 120px;
+    height: 147px;
+    margin: 0;
+    position: relative;
+    
+    
+}
+
+/* End, My Learning  */
+
+/* What to learn next */
+
+
+.hero a {
+
+    text-decoration: none;
+    color: initial;
+}
+
+.hero__user {
+    font-family: SuisseWorks,Georgia,Times,'Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 31px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    letter-spacing: .5px;
+    line-height: 38px;
+    color: #2D2F31;
+    height: 40px;
+}
+
+.hero__card {
+    border :1px solid #d1d7dc;
+    cursor: pointer;
+    display : flex;
+    transition: box-shadow .3s ease;
+    padding: 21px;
+    margin-bottom: 10px;
+}
+
+.hero__card-info {
+    padding-left: 20px;
+    padding-right: 150px;
+}
+
+.hero__card-info--title
+{
+    font-size: 21px ;
+    font-weight: 700;
+}
+
+.hero__card-info--tutor {
+    color: #6a6f73;
+    font-size: 13px;
+}
+
+.hero__card:hover {
+
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+
+}
+
+.hero__card img {
+    border: 1px solid #d1d7dc;
+    padding: 20px;
+    width: 478px;
+    height: 268px;
+}
+
+.hero__card-info {
+    padding-left: 6px;
+}
+
+
+.hero__card-info--updates {
+   display: flex;
+   gap: 7px; 
+   color:  #1e6055;
+   font-weight: bold;
+   font-size: 12px;
+}
+
+
+/* End What to learn next */
+
+
+/* Phones */
+@media only screen and (max-width:480px) {
+    /* navbar */
+    
+
+    /* End Navbar */
+
+    /* Slideshow */
+    .hero__images-frame {
+        display: none;
+    }
+
+
+    /* End Slideshow */
+
+    /* Below My learning */
+
+    .hero__video-cards {
+        overflow-y: auto;
+        display :flex;
+        margin-right: 5px;
+    }
+
+    /* End My learning */
+  
+
+
+    
+
+  
+
+    /* Below What to learn next */
+
+    .hero__card-image {
+        border: none;
+        margin : 0
+    }
+
+    .hero__card-image img {
+        border : none;
+        width: 313px;
+        height: 200px;
+        padding: 0;
+    }
+  
+    .hero__card {
+        border :1px solid black;
+        cursor: pointer;
+        display : block;
+        flex-direction: column;
+        transition: box-shadow .3s ease;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero__card-info {
+       
+        
+    }
+
+    .hero__card-info--title
+    {
+        inline-size: 300px;
+        overflow-wrap: break-word;
+        letter-spacing: -.02rem;
+        font-size: 20px ;
+        font-weight: 700;
+    }
+
+    .hero__card-info--description {
+        inline-size: 310px;
+        font-size: 14px;
+        color: #6a6f73;
+    
+    }
+
+    .hero__card-info--minor {
+        font-size: 12px;
+        color: #6a6f73;
+    }
+    
+
+    .hero__card-info--tutor {
+        gap : 5px
+    }
+
+    /* End 'What to learn next' */
+
+}
+
+
+
+

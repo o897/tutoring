@@ -1,0 +1,152 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  /*  */
+
+
+.tutorial__video video {
+    width : 1428px;
+    height : 649px !important;
+}
+
+.tutorial__video-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 459px;
+    height: 71px;
+    background-color: #D1D7DC;
+    border: none;
+    padding: 2px 4px 3px;
+    cursor: pointer;
+
+}
+
+.tutorial__video-info-btn:hover {
+    
+    background-color: #6a6f73;
+
+}
+
+.tutorial__video-title {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.tutorial__video-info {
+    margin: 7px 0;
+    font-size: 13px;
+    display: flex;
+    gap: 250px;
+}
+
+
+.tutorial__video-info-btn {
+    border: 1px solid black;
+    display: block;
+    padding: 2px 14px;
+    height: 28px;
+    width: 129px;
+}
+
+.tutorial__video-info-btn a {
+    color : black;
+}
+
+.tutorial__video-chapter {
+    margin-left: 6px;
+}
+
+.tutorial__check {
+    margin-left: 5px;
+    position: relative;  
+    top: 5px;  
+}
+
+
+
+
+.tutorial_section-sidebar {
+    width: 485px;
+    padding-left: 20px;
+}
+
+/* about */
+
+
+.lesson {
+    margin-left: 25px;
+}
+
+.lesson__sections {
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+    color: #6a6f73;
+}
+
+.lesson__sections a {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lesson__about {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.lesson__tutor-name {
+    font-weight: 700;
+}
+
+.tutor__info {
+    display : flex;
+}
+
+
+.tutor__info-title {
+    width: 337px;
+}
+
+.tutor__info-details {
+    padding-left: 20px;
+
+}
+.tutor__info-details p {
+    padding-left: 30px;
+}
+
+/* Tutor Card */
+
+/* Look at the devChalleges card */
+.tutor__card {
+
+    
+}
+
+
+/* phones */
+@media only screen and (max-width:480px) {
+    
+    .tutorial {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .tutorial__video video {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .tutorial__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tutorial_section-sidebar {
+        display : none;
+    }
+
+}
